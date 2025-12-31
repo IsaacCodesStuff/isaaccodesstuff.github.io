@@ -1,0 +1,57 @@
+/* ===== Material 3-ish Color Tokens ===== */
+:root {
+  --md-primary: #6750a4;
+  --md-on-primary: #ffffff;
+  --md-surface: #fef7ff;
+  --md-surface-variant: #e7e0ec;
+  --md-on-surface: #1c1b1f;
+  --md-outline: #79747e;
+}
+
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--md-surface);
+  color: var(--md-on-surface);
+}
+
+/* ===== Top Bar ===== */
+.top-bar {
+  background-color: var(--md-primary);
+  color: var(--md-on-primary);
+  padding: 24px;
+  text-align: center;
+}
+
+/* ===== Layout ===== */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 24px;
+}
+
+/* ===== Cards ===== */
+.card {
+  background-color: var(--md-surface-variant);
+  border-radius: 24px; /* Material 3 loves large radii */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  color: var(--md-primary);
+  font-weight: 500;
+}
