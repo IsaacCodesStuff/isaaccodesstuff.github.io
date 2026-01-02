@@ -55,3 +55,35 @@ body {
   color: var(--md-primary);
   font-weight: 500;
 }
+
+.menu-btn {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: var(--md-surface-variant);
+  padding: 24px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#nav-toggle:checked + .menu-btn + .drawer {
+  left: 0;
+}
+
+.drawer a {
+  display: block;
+  margin: 12px 0;
+  text-decoration: none;
+  color: var(--md-on-surface);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Guide (TWRP)</title>
+</head>
+<body>
+    <h1>TeamWin Recovery Project For Samsung Galaxy A06</h1>
+    <h2>Installation Instructions</h2>
+    <h3>Requirements:</h3>
+    <p>
+        - <a href="/files/TWRP One UI 7 Stable.tar" download>TWRP recovery</a> / <a href="/files/TWRP One UI 7 Stable (Touchless).tar" download>TWRP for broken touch</a><br>
+        - <a href="/files/DFE.zip" download>DFE (optional for decryption)</a><br>
+        - <a href="/files/Odin.zip" download>Odin</a><br>
+        - USB cable<br>
+        - <a href="/files/Samsung USB Driver.exe" download>Samsung USB Driver</a><br>
+    </p>
+    <h3>Steps:</h3>
+    <ol>
+        1. Reboot to download mode (Volume Up & Down + plug in USB connected to PC)<br>
+        2. In Odin, check AP slot and select the .tar file you downloaded<br>
+        3. Under Settings in Odin, uncheck Auto Reboot *<br>
+        4. Click on START and wait for it to finish<br>
+        5. After flashing process is complete, exit download mode by holding down Volume Down + Power<br>
+        6. Reboot to recovery by holding down Volume Up + Power (do <strong>not</strong> remove USB cable; do this the moment the screen goes black)<br>
+    </ol>
+    <h3>Notes:</h3>
+        <p>
+            * <i>If your reaction time is good enough, you can leave Auto Reboot on. Once the phone screen goes black, immediately hold down Power Up + Power. Booting into recovery will be a success if you see the message</i> <code>warranty_bit_set: recovery</code> <i>during bootup.</i><br>
+        </p>
+        <p>
+            - DFE is only needed if you want your storage to be accessible in custom recovery. <strong>DSU (dynamic system updates) will break if you flash it.</strong><br>
+        </p>
+        <p> - If your phone's touch is unresponsive, simply go back to Odin and flash the touchless version of TWRP. With it, you can navigate using the volume buttons and perform actions using the power button.</p>
+    
+</body>
+</html>
